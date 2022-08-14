@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <style type="text/tailwindcss">
+        *{
+            border: 1px solid red;
+        }
+    </style> -->
+    <title>Home | Dewi Lamsang</title>
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <nav class="p-4 shadow-lg flex items-center justify-between">
+        <div class="cursor-pointer">
+            <svg class="w-10 h-10 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"><path d="M32 55.484S26.075 43.401 31 27M33.625 55.431s.25-2.756 1.801-6.703" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M30.099 51.308s-8.829-5.231-9.741-20.519c-.912-15.288 17.29-22.597 17.29-22.597s2.394 13.667 4.282 23.674C43.817 41.872 33.924 49.7 33.924 49.7" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M45.781 25.014c6.164-1.93 12.408-.893 12.408-.893s-4.224 10.796-7.221 18.759c-2.997 7.963-13.458 9.256-13.458 9.256" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M42.221 37.457s1.592-2.855 7.352-3.641M20.76 35.224s-8.156-6.815-13.941-9.064c0 0-1.884 18.616 4.417 24.929 6.3 6.313 16.637 1.639 16.637 1.639" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M11.723 36.078s6.558 10.337 15.825 13.223M12.658 44.315l4.39-1.125" style="fill:none;stroke:#222a33;stroke-width:1.5px"/></svg>
+            <span class="font-bold font-inter tracking-wide text-lg text-green-800">Dewi Lamsang</span>
+        </div>
+            
+        <div class="flex">
+            <button class="sm:hidden" id="hamburger" name="hamburger" type="button">
+                <span class="block rounded-xl w-[30px] h-[3px] my-1 bg-slate-900 dark:bg-slate-300"></span>
+                <span class="block rounded-xl w-[30px] h-[3px] my-1 bg-slate-900 dark:bg-slate-300"></span>
+                <span class="block rounded-xl w-[30px] h-[3px] my-1 bg-slate-900 dark:bg-slate-300"></span>
+            </buton>
+        </div>
+
+        <ul class="hidden sm:flex sm:items-center sm:justify-between">
+            <li class="mx-2 hover:text-blue-500">
+                <a href="https://imkuroo.github.io/home.html" class="font-bold">Home</a>
+            </li>
+            <li class="mx-2 hover:text-blue-500">
+                <a href="https://imkuroo.github.io/about-us.html">About Us</a>
+            </li>
+            <li class="mx-2 hover:text-blue-500">
+                <a href="#">Contact</a>
+            </li>
+            <li class="mx-1 text-2xl font-inter">
+                <span>|</span>
+            </li>
+            <li>
+                <img src="/img/git.png" alt="git-img" class="inline w-10 h-10 mx-2 cursor-pointer">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- toggle nenu -->
+    <div class="sm:hidden hidden mx-5" id="nenu">
+        <div class="rounded-lg shadow-lg p-5">
+            <ul>
+                <li class="block rounded-lg hover:bg-green-400 pl-2 font-bold"><a href="https://imkuroo.github.io/home.html">Home</a></li>
+                <li class="block rounded-lg hover:bg-green-400 pl-2"><a href="https://imkuroo.github.io/about-us.html">About Us</a></li>
+                <li class="block rounded-lg hover:bg-green-400 pl-2"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <div class="container mt-16 mx-auto max-w-sm">
+        <h2 class="text-green-800 font-semibold font-inter text-center text-base md:text-lg lg:text-xl">Selamat Datang,</h2>
+        <h1 class="font-inter font-bold text-3xl text-center text-slate-800 md:text-4xl lg:text-5xl">Website Sejarah Dewi Lamsang</h1>
+        <p class="text-sm font-semibold font-inter text-center pt-2 italic md:text-base lg:text-lg">"<span class="text-green-800">Leang Surukang</span> Pa'je'nekang, <span class="text-green-800">Pattallassang</span> Pa'ba'rakang, <span class="text-green-800">Ulu Erea</span> Pattongko'na Simbolenna"</p>
+
+        <!-- logo sponsor -->
+        <div class="mt-5 flex flex-wrap items-center justify-center gap-2">
+            <img src="/img/uh.png" alt="uh" class="w-20">
+            <img src="/img/pangkep.jpg" alt="pangkep" class="w-12">
+            <img src="/img/posko.png" alt="posko" class="w-[70px]">
+            <img src="/img/tonasa.png" alt="tonasa" class="w-12">
+            <img src="/img/SDG-unhas.png" alt="sdgh-unhas" class="w-12">
+            <img src="/img/kampus-merdeka.png" alt="kampus-merdeka" class="w-12">
+        </div>
+    </div>
+
+    <hr class="max-w-sm mx-auto my-10 p-[1px] bg-slate-300 rounded-lg md:max-w-xl lg:max-w-3xl\">
+
+    <!-- profile -->
+    <h1 class="font-bold font-inter text-xl text-green-800 text-center mb-3">Profile</h1>
+    <div class="mx-4 mb-3 flex items-center justify-center flex-wrap">
+        <div class="mx-3 max-w-[500px] text-justify font-inter text-black md:text-lg">&nbsp;&nbsp;&nbsp;&nbsp;Dewi Lamsang (Desa Wisata Alam Pattallassang) terletak di ujung selatan Kelurahan Kalabbirang, yang merupakan wilayah administratif Kecamatan Minasate'ne, Kabupaten Pangkep. Tempat ini juga berbatasan dengan Kabupaten Bungoro tidak jauh dari Tonasa II. Desa Wisata Alam Pattallassang memiliki keindahan alam yang menjadi daya tarik wisata yang menarik bagi wisatawan dengan potensinya yang sangat besar.
+        </div>
+    </div>
+
+    <hr class="max-w-sm mx-auto my-10 p-[1px] bg-slate-300 rounded-lg md:max-w-xl lg:max-w-3xl\">
+
+    <!-- card/content -->
+    <h1 class="font-bold font-inter text-xl text-green-800 text-center mb-3">Tempat Wisata,</h1>
+
+    <div class="flex flex-wrap mb-10 mx-7 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+        <a href="https://imkuroo.github.io/01-leang-otoa.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3">Leang Otoa</h1>
+                <p class="font-inter font-base p-1">Penamaan gua ini berasal dari mata air di dalam gua yang memiliki bunyi seperti mobil sehingga dinamakan Leang Otoa, di gua ini juga terdapat cap tangan manusia purba.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/02-bujung-dare.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Bujung Dare</h1>
+                <p class="font-inter font-base p-1">Bujung Dare merupakan sebuah gua. yang dari luar nampak dipenuhi tali-tali pohon yang menjuntai. Di dekat gua ini juga terdapat sebuah sumur yang merupakan tempat minum monyet.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/03-kampung-tiu.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Kampung Tiu</h1>
+                <p class="font-inter font-base p-1">Kampung Tiu adalah sebuah perkampungan yang masih sarat akan adat istiadat budaya. disetiap rumah juga terdapat gumbang yang digunakan untuk cuci kaki yang merupakan ciri khas dari kampung tiu sendiri.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/04-bujung-barania.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Bujung Barania</h1>
+                <p class="font-inter font-base p-1">Bujung Barania, merupakan sebuah sumur tua dengan tali pohon yang menjuntai. Beberapa masyarakat percaya bahwa jika seseorang mencuci mukanya di bujung barania, lantas airnya berubah menjadi warna merah maka orang tersebut merupakan orang yang beruntung.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/05-justice-table.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Justice Table</h1>
+                <p class="font-inter font-base p-1">Dulu Justice Table digunakan sebagai tempat untuk menyelesaikan masalah, mungkin saat in semacam pengadilan. Justice table ini merupakan sebuah batu dengan bentuk yang cukup unik karena bentuk batu terlihat seperti melayang.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/06-kuburan-kuno.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Kuburan Kuno</h1>
+                <p class="font-inter font-base p-1">Masyarakat sekitar memiliki kepercayaan sendiri mengenai tempat ini, yaitu masyarakat percaya jika bernazar ditempat ini maka permohonan tersebut akan terkabul dan jika permohonan tersebut terkabul orang yang bernazar tadi harus kembali ke perkuburan purba dan membangun pagar.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/07-leang-surukang.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Leang Surukang</h1>
+                <p class="font-inter font-base p-1">Goa ini dapat dikatakan sangat menarik dibanding goa-goa lainnya dari mulut gua kita dapat melihat pemandangan indah sepeti hamparan sawah, Deretan karst dan sungai beberapa Stalagmit dan stalagtit yang terbentuk juga masih aktif.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/08-leang-cumi-lantang.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Leang Cumi Lantang</h1>
+                <p class="font-inter font-base p-1">Gua ini unik karena dihuni segerombolan burung sriti yang memiliki bentuk seperti burung walet tapi lebih kecil. Didalam gua juga terdapat situs peninggalan sejarah berupa sampah dapur yang sudah menjadi mollusca dan juga terdapat cap tangan manusia purba.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/09-ulu-erea.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Ulu Erea</h1>
+                <p class="font-inter font-base p-1">Ulu erea merupakan sebuah tempat berupa telaga yang sampai sekarang oleh masyarakatnya masih menjadi sumber air minum. Di Ulu Erea ini juga terdapat Gua dengan Keindahan Stalagtit dan stalagmitnya yang menawan.</p>
+            </div>
+        </a>
+
+        <a href="https://imkuroo.github.io/10-Leang-garunggung.html">
+            <div class="border border-slate-300 w-50 h-50 mx-3 rounded-xl shadow-lg p-1 mb-5 hover:bg-green-500">
+                <img src="/img/default.jpg" alt="card-img01" class="rounded-xl">
+                <h1 class="font-inter font-semibold text-lg px-1 mt-3 ">Leang Garunggung</h1>
+                <p class="font-inter font-base p-1">Dinamakan Leang Garunggung karena Apabila Stalagtit dan stalagmit dipukul berbunyi "garonggong" atau suaranya menyerupai gendang. Di gua ini stalagtit dan stalagmitnya ada beberapa yang masih aktif dan juga terdapat cap tangan manusia purba.</p>
+            </div>
+        </a>
+
+    </div>
+
+    <hr class="max-w-sm mx-auto my-10 p-[1px] bg-slate-300 rounded-lg md:max-w-xl lg:max-w-3xl">
+
+    <!-- end section -->
+
+    <div class="p-5 bg-slate-800 w-full h-fit">
+        <div class="justify-center text-slate-300 font-light">Copyright © 2022 Andiqal. All Rights Reserved</div>
+    </div>
+
+    <script type="text/javascript">
+        document.querySelectorAll('p').forEach(function (item) {
+            textList = item.innerText.split(' ')
+            if (textList.length > 22) {
+                link = item.innerHTML.slice(item.innerHTML.search(/<a href=/i))
+                textList = textList.slice(0, textList.length - 1).slice(0, 20)
+                item.innerHTML = textList.join(' ') + ' . . . ' + link
+            }
+            });
+
+            function goToLogin(){
+            location.href="/login"
+            }
+
+            const hamburger = document.querySelector('#hamburger');
+            const nenu = document.querySelector('#nenu');
+
+        hamburger.addEventListener('click',function(){
+            hamburger.classList.toggle('hamburger-active');
+            nenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- <script src="C:\Users\ANDI NURUL QALBI\Desktop\dl03\dist\output.css"> -->
+
+    </script>
+
+</body>
+</html>
